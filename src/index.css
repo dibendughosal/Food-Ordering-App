@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+#root{
+  /* background-color: #ff5200; */
+  /* background-color: #d20e0e; */
+}
 .header{
   display: flex;
   justify-content: space-between;
@@ -14,6 +18,7 @@
 .logo{
   width: 100px;
   margin-left: 60px;
+  mix-blend-mode: multiply;
 }
 .nav-items{
   padding-right: 40px;
@@ -38,9 +43,8 @@ a{
 }
 .restaurants{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
   padding: 20px;
   margin-top: 20px;
-  background-color: #f1f1f1;
 }
