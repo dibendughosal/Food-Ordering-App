@@ -1,0 +1,16 @@
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.restaurant-card{
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
+}
+.res-cardImg{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
