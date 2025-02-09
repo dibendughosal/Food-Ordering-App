@@ -1,12 +1,11 @@
-import '../App.css';
-const RestaurantCard = () => {
+const RestaurantCard = ( {src, heading, para} ) => {
     return (
-      <div className="restaurant-card">
-        <img src="https://biryanimenu.com/wp-content/uploads/2023/11/Dada-Boudi-Biriyani-min-1024x576.png" alt="Restaurant" className='w-[200px]' />
-        <h3>Dada Boudi Restaurant</h3>
-        <p>Mutton Biriyani</p>
-        <p>4.4 ⭐</p>
-        <button>Order Now</button>
+      <div className="h-[230px] flex flex-col w-[360px] border border-gray-200 rounded-2xl overflow-hidden hover:scale-[1.03] transition duration-200">
+        <img src={src} alt="Restaurant" className='h-[160px] object-cover' />
+        <div className="h-[84px] text-[#363636] px-5 py-2">
+            <h3 className="text-lg font-medium">{heading}</h3>
+            <p className="text-[1rem] text-[#4f4f4f]">{para}</p>
+        </div>
       </div>
     )
 }

@@ -6,8 +6,10 @@ function App() {
 
   return (
     <>
+     <div className="w-screen h-screen overflow-x-hidden">
       <Header/>
       <Restaurant/>
+     </div>
     </>
   )
 }
