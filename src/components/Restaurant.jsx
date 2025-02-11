@@ -12,7 +12,21 @@ function Restaurant(){
           <RestaurantCard src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" title="Dining" subtitle="View the city's favourite dining venues"/>
           <RestaurantCard src="https://b.zmtcdn.com/data/o2_assets/371de657644f1b5818fcb5d83387c8c91722851940.png?output-format=webp&fit=around|402:360&crop=402:360;*,*" title="Live Events" subtitle="Discover India's best events & concerts"/>
         </div>
-        <h1 className='relative top-[-120px] px-[80px] font-extrabold text-[26px] transform-stroke stroke-[10px] stroke-black specialFont'>Restaurents..</h1>
+        <h1 className='relative top-[-120px] px-[80px] font-extrabold text-[26px] transform-stroke stroke-[10px] text-red-600 specialFont inline-block'>Restaurents..
+          <div className='flex gap-2'>
+            <div className='w-2 h-2 bg-indigo-800 rounded-[50%]'></div>
+            <div className='w-2 h-2 bg-indigo-800 rounded-[50%]'></div>
+            <div className='w-2 h-2 bg-indigo-800 rounded-[50%]'></div>
+            <div className='w-2 h-2 bg-indigo-800 rounded-[50%]'></div>
+            <div className='w-2 h-2 bg-indigo-800 rounded-[50%]'></div>
+            <div className='w-2 h-2 bg-indigo-800 rounded-[50%]'></div>
+            <div className='w-2 h-2 bg-indigo-800 rounded-[50%]'></div>
+            <div className='w-2 h-2 bg-indigo-800 rounded-[50%]'></div>
+            <div className='w-2 h-2 bg-indigo-800 rounded-[50%]'></div>
+            <div className='w-2 h-2 bg-indigo-800 rounded-[50%]'></div>
+            <div className='w-2 h-2 bg-indigo-800 rounded-[50%]'></div>
+          </div>
+        </h1>
       </div>
     )
 }
