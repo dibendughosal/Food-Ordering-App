@@ -1,4 +1,5 @@
-const resData = [{
+const resData = [
+  {
     "info": {
       "id": "10576",
       "name": "Pizza Hut",
@@ -2010,5 +2011,6 @@ const resData = [{
       "link": "https://www.swiggy.com/city/bangalore/theobroma-7th-block-koramangala-rest426776",
       "type": "WEBLINK"
     }
-  }];
+  }
+];
 export default resData;

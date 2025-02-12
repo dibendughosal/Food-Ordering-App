@@ -1,4 +1,10 @@
+import { useState } from "react";
+
 function Header(){
+  const [btnName, setBtnName] = useState('Login');
+  const changeName = () => {
+    btnName === 'Login'? setBtnName('Logout') : setBtnName('Login');
+  }
   return (
     <div className="flex justify-between items-center px-[80px]">
       <div className="flex items-center relative">
@@ -9,8 +15,7 @@ function Header(){
           <a href="#"><li className="hover:text-[#f15928] transition duration-200">Home</li></a>
           <a href="#" className="hover:text-[#f15928] transition duration-200"><li>Add Restaurant</li></a>
           <a href="#" className="hover:text-[#f15928] transition duration-200"><li>Investor Relation</li></a>
-          <a href="#" className="hover:text-[#f15928] transition duration-200"><li>Login</li></a>
-          <a href="#" className="hover:text-[#f15928] transition duration-200"><li>Sign Up</li></a>
+          <button href="#" className="hover:text-[#f15928] bg-[#f15928] text-white hover:bg-white transition duration-200 px-4 font-medium border border-gray-400 rounded-4xl " onClick={changeName}><li>{btnName}</li></button>
           
         </ul>
     </div>
