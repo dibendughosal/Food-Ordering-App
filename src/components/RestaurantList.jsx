@@ -8,7 +8,7 @@ const RestaurantList = () => {
     const fetchData = async () => {
         try {
             console.log("Fetching data...");
-            const response = await fetch("https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62449999999&page_type=DESKTOP_WEB_LISTING");
+            const response = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62449999999&page_type=DESKTOP_WEB_LISTING");
             
             console.log("Response Status:", response.status);
             if (!response.ok) {
@@ -22,7 +22,7 @@ const RestaurantList = () => {
             
             if (!restaurants) {
                 throw new Error("No restaurant data found.");
-                setResList(restaurants);
+                
             }
     
             setResList(restaurants);
